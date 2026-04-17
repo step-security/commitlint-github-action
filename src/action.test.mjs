@@ -29,6 +29,8 @@ const mockCore = td.object(['getInput', 'setFailed', 'setOutput'])
 jest.unstable_mockModule('@actions/core', () => mockCore)
 
 jest.unstable_mockModule('@actions/github', () => {
+  const { Context } = jest.requireActual('@actions/github/lib/context.js')
+
   class MockOctokit {
     constructor() {
       this.rest = {
@@ -43,7 +45,7 @@ jest.unstable_mockModule('@actions/github', () => {
   }
 
   return {
-    ...jest.requireActual('@actions/github'),
+    context: new Context(),
     getOctokit: () => new MockOctokit(),
   }
 })
