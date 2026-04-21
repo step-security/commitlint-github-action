@@ -35,7 +35,7 @@ outputs:
     description: The error and warning messages for each one of the analyzed commits
 runs:
   using: docker
-  image: Dockerfile
+  image: 'docker://ghcr.io/step-security/commitlint-github-action:v6.2.1@sha256:d01b208a0b0a494f295c57574fb5b88adc0814d32faa88c8f032d8714ccebcc7' #v6.2.1
 branding:
   icon: check-square
   color: blue
