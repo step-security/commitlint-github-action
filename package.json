@@ -27,7 +27,7 @@
     "@commitlint/config-lerna-scopes": "^20.4.3",
     "@commitlint/config-patternplate": "^19.1.0",
     "@commitlint/ensure": "^19.0.3",
-    "@commitlint/format": "^19.0.3",
+    "@commitlint/format": "^21.0.0",
     "@commitlint/lint": "^19.1.0",
     "@commitlint/load": "^19.2.0",
     "axios": "^1.15.0",
