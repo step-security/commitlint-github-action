@@ -23,7 +23,7 @@
     "@actions/core": "^2.0.1",
     "@actions/github": "^8.0.1",
     "@commitlint/config-angular": "^19.1.0",
-    "@commitlint/config-conventional": "^19.1.0",
+    "@commitlint/config-conventional": "^21.0.0",
     "@commitlint/config-lerna-scopes": "^20.4.3",
     "@commitlint/config-patternplate": "^19.1.0",
     "@commitlint/ensure": "^19.0.3",
