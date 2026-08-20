@@ -1,3 +1,7 @@
 [[IgnoredVulns]]
 id = "GHSA-52f5-9888-hmc6"
 reason = "tmp@0.1.0 is pinned by @commitlint/test (abandoned, no fixed upstream version). Dev-only dependency — never ships to production (Dockerfile uses npm ci --production). CVSS 2.5 LOW (symlink race in tmp dir creation) requires local filesystem access during a test run."
+
+[[IgnoredVulns]]
+id = "GHSA-ph9p-34f9-6g65"
+reason = "tmp@0.2.1 is exact-pinned by @commitlint/test@9.1.0 (latest release); no newer version available. Dev-only — never ships to production (Dockerfile uses npm ci --production)."
