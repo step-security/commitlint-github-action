@@ -6,14 +6,13 @@ import pkg from './package.json'
 
 export default {
   input: 'run.mjs',
-  external: (depName) =>
-    depName.includes('node_modules') && !depName.includes('node_modules/dargs'),
+  external: (depName) => depName.includes('node_modules'),
   output: [{ file: pkg.module, format: 'es' }],
   plugins: [
     babel({
       babelHelpers: 'bundled',
       configFile: path.resolve(__dirname, 'babel.config.json'),
-      exclude: ['node_modules/(?!dargs)'],
+      exclude: ['node_modules/**'],
     }),
     nodeResolve({
       preferBuiltins: true,
